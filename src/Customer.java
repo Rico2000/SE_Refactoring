@@ -24,7 +24,6 @@ class Customer {
         while (enum_rentals.hasMoreElements()) { 
             Rental each = (Rental) enum_rentals.nextElement();
             //determine amounts for each line
-            frequentRenterPoints ++;
             // add bonus for a two day new release rental
             frequentRenterPoints += each.getFrequentRenterPoints();
             //show figures for this rental
