@@ -13,7 +13,7 @@ class Rental {
     }
     public double getAmount() {
         double thisAmount = 0;
-        switch (this.getMovie().getPriceCode()) {
+        switch (movie.getPriceCode()) {
             case REGULAR:
                 thisAmount += 2;
                 if (this.getDaysRented() > 2)
