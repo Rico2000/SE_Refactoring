@@ -13,7 +13,7 @@ public class CustomerTest {
 		assertEquals(expected1, testCustomer1.statement());
 
 		Customer testCustomer2 = new Customer("testCustomer2");
-		Movie testMovie = new Movie("testMovie", new ChildrensPrice());
+		Movie testMovie = new Movie("testMovie", new ChildrenPrice());
 		Rental testRental = new Rental(testMovie, 20);
 		testCustomer2.addRental(testRental);
 		String expected2 = "Rental Record for testCustomer2\n" + "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount"

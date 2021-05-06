@@ -1,5 +1,5 @@
 
-public class ChildrensPrice implements Price {
+public class ChildrenPrice implements Price {
 
 	@Override
 	public double getAmount(int daysRented) {
