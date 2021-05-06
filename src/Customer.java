@@ -7,13 +7,13 @@ class Customer {
     private ArrayList<Rental> rentals = new ArrayList<Rental>();
     public Customer (String newname){
         name = newname;
-    }
+    };
     public void addRental(Rental rental) {
         rentals.add(rental);
-    }
+    };
     public String getName (){
         return name;
-    }
+    };
     public String statement() {
         StringBuilder result = new StringBuilder();
         result.append("Rental Record for " + this.getName() + "\n");
@@ -44,18 +44,11 @@ class Customer {
         return result.toString();
     }
     private double getTotalAmount() {
-    	double totalAmount  = 0;
-    	for(Rental rental: rentals) {
-    		totalAmount +=rental.getAmount();
-    	}
-    	return totalAmount;
+    	return rentals.stream().mapToDouble(e -> e.getAmount()).sum();
     		
     }
     private int getFrequentRenterPoints() {
-    	int totalFrequentRenterPoints  = 0;
-    	totalFrequentRenterPoints = rentals.stream().mapToInt(e -> e.getFrequentRenterPoints()).sum();
-    
-    	return totalFrequentRenterPoints;
+    	return rentals.stream().mapToInt(e -> e.getFrequentRenterPoints()).sum();
     }
 
    
