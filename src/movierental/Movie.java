@@ -1,3 +1,4 @@
+package movierental;
 public class Movie {
 	private String title;
 	private Price price;

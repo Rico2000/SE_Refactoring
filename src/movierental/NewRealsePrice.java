@@ -1,4 +1,4 @@
-
+package movierental;
 public class NewRealsePrice implements Price {
 
 	@Override

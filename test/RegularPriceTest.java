@@ -2,6 +2,9 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import movierental.Price;
+import movierental.RegularPrice;
+
 public class RegularPriceTest {
 
 	@Test

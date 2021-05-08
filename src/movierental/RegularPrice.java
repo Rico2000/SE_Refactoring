@@ -1,3 +1,4 @@
+package movierental;
 
 public class RegularPrice implements Price {
 

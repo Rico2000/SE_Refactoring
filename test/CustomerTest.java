@@ -3,6 +3,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import movierental.ChildrenPrice;
+import movierental.Customer;
+import movierental.Movie;
+import movierental.Rental;
+
 public class CustomerTest {
 
 	@Test
