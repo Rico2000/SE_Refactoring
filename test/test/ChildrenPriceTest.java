@@ -1,11 +1,14 @@
 package test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
+
 import movierental.ChildrenPrice;
 import movierental.Price;
 
 public class ChildrenPriceTest {
+
 
 	@Test
 	public void getCorrectAmountRegularPriceTest() {
