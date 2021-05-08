@@ -1,7 +1,7 @@
-import static org.junit.Assert.*;
+package test;
+import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Test;
-
+import org.junit.jupiter.api.Test;
 import movierental.NewRealsePrice;
 import movierental.Price;
 
